@@ -33,8 +33,8 @@
                 <field
                     name="cards"
                     type="subform"
-                    label="MOD_IMAGE_IMAGES_LABEL"
-                    description="MOD_IMAGE_IMAGES_DESC"
+                    label="MOD_CARDLIST_CARDS_LABEL"
+                    description="MOD_CARDLIST_CARDS_DESC"
                     multiple="true"
                     min="1"
                 >
@@ -60,7 +60,7 @@
                         />
                         <field
                             name="link"
-                            type="url"
+                            type="text"
                             label="MOD_CARDLIST_CARD_LINK_LABEL"
                             description="MOD_CARDLIST_CARD_LINK_DESC"
                         />
@@ -71,22 +71,10 @@
                             description="MOD_CARDLIST_CARD_LINK_TEXT_DESC"
                         />
                         <field
-                            name="link_full"
-                            type="radio"
-                            default="0"
-                            label="MOD_CARDLIST_CARD_LINK_FULL_LABEL"
-                            description="MOD_CARDLIST_CARD_LINK_FULL_DESC"
-                            class="btn-group btn-group-yesno
-                        ">
-                            <option value="1">JYES</option>
-                            <option value="0">JNO</option>
-                        </field>
-                        <field
                             name="theme_classes"
                             type="text"
-                            label="MOD_CARDLIST_CARD_TITLE_LABEL"
-                            description="MOD_CARDLIST_CARD_TITLE_DESC"
-                            required="true"
+                            label="MOD_CARDLIST_CARD_THEMES_LABEL"
+                            description="MOD_CARDLIST_CARD_THEMES_DESC"
                         />
                         <field
                             name="body"
@@ -130,6 +118,17 @@
 					label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
 				/>
+                <field
+                    name="link_full"
+                    type="radio"
+                    default="0"
+                    label="MOD_CARDLIST_CARD_LINK_FULL_LABEL"
+                    description="MOD_CARDLIST_CARD_LINK_FULL_DESC"
+                    class="btn-group btn-group-yesno
+                ">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
 
 			</fieldset>
         </fields>
