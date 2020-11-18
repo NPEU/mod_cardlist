@@ -131,6 +131,13 @@
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>
+                <field
+                    name="card_basis"
+                    type="number"
+                    label="MOD_CARDLIST_CARD_BASIS_LABEL"
+                    description="MOD_CARDLIST_CARD_BASIS_DESC"
+                    default="25"
+                />
 
 			</fieldset>
         </fields>
