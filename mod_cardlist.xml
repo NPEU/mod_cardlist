@@ -108,6 +108,17 @@
                             label="MOD_CARDLIST_CARD_FOOTER_IMAGE_ALT_LABEL"
                             description="MOD_CARDLIST_CARD_FOOTER_IMAGE_ALT_DESC"
                         />
+                        <field
+                            name="footer_logo"
+                            type="radio"
+                            default="0"
+                            label="MOD_CARDLIST_CARD_FOOTER_LOGO_LABEL"
+                            description="MOD_CARDLIST_CARD_FOOTER_LOGO__DESC"
+                            class="btn-group btn-group-yesno
+                        ">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
                     </form>
                 </field>
             </fieldset>
