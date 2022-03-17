@@ -5,11 +5,11 @@
         <description>Joomla! mod_cardlist module</description>
         <element>mod_cardlist</element>
         <type>module</type>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
         <client>site</client>
-        <infourl title="NPEU: mod_cardlist">https://github.com/NPEU/mod_cardlist/releases/tag/v1.2.0</infourl>
+        <infourl title="NPEU: mod_cardlist">https://github.com/NPEU/mod_cardlist/releases/tag/v1.3.0</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_cardlist/archive/v1.2.0.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_cardlist/archive/v1.3.0.zip</downloadurl>
         </downloads>
         <targetplatform name="joomla" />
         <tags>
