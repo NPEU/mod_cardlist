@@ -84,7 +84,7 @@
                             description="MOD_CARDLIST_CARD_BODY_DESC"
                             default=""
                             buttons="false"
-                            filter="safehtml"
+                            filter="JComponentHelper::filterText"
                         />
                         <field
                             name="footer"
