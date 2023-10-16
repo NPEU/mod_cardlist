@@ -113,7 +113,7 @@
                             type="radio"
                             default="0"
                             label="MOD_CARDLIST_CARD_FOOTER_LOGO_LABEL"
-                            description="MOD_CARDLIST_CARD_FOOTER_LOGO__DESC"
+                            description="MOD_CARDLIST_CARD_FOOTER_LOGO_DESC"
                             class="btn-group btn-group-yesno
                         ">
                             <option value="1">JYES</option>
