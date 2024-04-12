@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" client="site" version="3.2.0" method="upgrade">
+<extension type="module" client="site" method="upgrade">
 
     <name>MOD_CARDLIST</name>
     <author>Andy Kirk</author>
     <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
     <authorUrl>https://www.npeu.ox.ac.uk</authorUrl>
-    <creationDate>November 2019</creationDate>
-    <copyright>(C) NPEU 2019</copyright>
+    <creationDate>April 2024</creationDate>
+    <copyright>(C) NPEU 2024</copyright>
     <license>MIT License; see LICENSE.md</license>
 
     <!--  The version string is recorded in the components table -->
-    <version>1.4.0</version>
+    <version>2.0.0</version>
     <!-- The description is optional and defaults to the name -->
     <description>MOD_CARDLIST_XML_DESCRIPTION</description>
 
     <updateservers>
         <!-- Note: No spaces or linebreaks allowed between the server tags -->
-        <server type="extension" name="NPEU: mod_cardlist Update Site">https://raw.githubusercontent.com/NPEU/mod_cardlist/master/update-manifest.xml</server>
+        <server type="extension" name="NPEU: mod_cardlist Update Site">https://raw.githubusercontent.com/NPEU/mod_cardlist/main/update-manifest.xml</server>
     </updateservers>
 
+    <namespace path="src">NPEU\Module\Cardlist</namespace>
+
     <files>
-        <filename module="mod_cardlist">mod_cardlist.php</filename>
-        <filename>helper.php</filename>
-        <filename>index.html</filename>
+        <filename module="mod_cardlist">services</filename>
         <folder>language</folder>
+        <folder>src</folder>
         <folder>tmpl</folder>
     </files>
 
@@ -84,7 +85,7 @@
                             description="MOD_CARDLIST_CARD_BODY_DESC"
                             default=""
                             buttons="false"
-                            filter="JComponentHelper::filterText"
+                            filter="safehtml"
                         />
                         <field
                             name="footer"
@@ -123,14 +124,14 @@
                 </field>
             </fieldset>
 
-			<fieldset name="advanced">
+            <fieldset name="advanced">
 
-				<field
-					name="layout"
-					type="modulelayout"
-					label="JFIELD_ALT_LAYOUT_LABEL"
-					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
-				/>
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
                 <field
                     name="link_full"
                     type="radio"
@@ -150,7 +151,7 @@
                     default="25"
                 />
 
-			</fieldset>
+            </fieldset>
         </fields>
     </config>
 
