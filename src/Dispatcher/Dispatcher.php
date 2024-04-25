@@ -32,7 +32,7 @@ class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareI
         $params = $data['params'];
         $data['stuff'] = $this->getHelperFactory()
             ->getHelper('CardlistHelper')
-            ->getStuff($data['params'], $this->getApplication());*/
+            ->getStuff($params, $this->getApplication());*/
 
         return $data;
     }
