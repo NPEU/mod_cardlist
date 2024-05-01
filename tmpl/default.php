@@ -8,8 +8,9 @@
  */
 
 defined('_JEXEC') or die;
-use Joomla\String\StringHelper;
+
 use Joomla\CMS\Factory;
+use Joomla\String\StringHelper;
 
 
 $doc = Factory::getDocument();
