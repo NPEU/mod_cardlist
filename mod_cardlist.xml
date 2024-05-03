@@ -22,7 +22,7 @@
     <namespace path="src">NPEU\Module\Cardlist</namespace>
 
     <files>
-        <filename module="mod_cardlist">services</filename>
+        <folder module="mod_cardlist">services</folder>
         <folder>language</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
