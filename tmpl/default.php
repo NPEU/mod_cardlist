@@ -8,10 +8,12 @@
  */
 
 defined('_JEXEC') or die;
+
+use Joomla\CMS\Factory;
 use Joomla\String\StringHelper;
 
 
-$doc = JFactory::getDocument();
+$doc = Factory::getDocument();
 $hx = StringHelper::increment($params->get('header_tag'));
 ?>
 <?php if ($module->showtitle): ?>
@@ -20,7 +22,7 @@ $hx = StringHelper::increment($params->get('header_tag'));
 
 <?php if (!empty($params->get('cards'))) : ?>
 <div>
-<?php foreach ($params->get('cards') as $card) : 
+<?php foreach ($params->get('cards') as $card) :
 
 if (!empty($card->link && !empty($card->link_text))) {
     $card->body .= '<p><a href="' . $card->link .'">' . $card->link_text . '</a></p>';
